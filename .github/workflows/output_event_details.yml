@@ -1,4 +1,4 @@
-name: Workflow 2
+name: Output event details on issues
 on: issues
 jobs:
   output_details:

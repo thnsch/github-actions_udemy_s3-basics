@@ -1,4 +1,4 @@
-name: CICD NodeJS app
+name: CD NodeJS app
 on: push
 jobs:
   Lint:
