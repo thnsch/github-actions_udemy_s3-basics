@@ -7,6 +7,4 @@ jobs:
       - name: Output issue detail
         run: |
           echo "An action on Issues was performed."
-          echo "Event name: ${{ github.event_name }}"
-          echo "Event path: ${{ github.event_path }}"
-          echo "Event path: ${{ github.event }}"
+          echo "Event name: ${{ toJSON(github.event) }}"
