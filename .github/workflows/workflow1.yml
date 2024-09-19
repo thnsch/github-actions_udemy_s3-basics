@@ -4,6 +4,8 @@ jobs:
   Lint:
     runs-on: ubuntu-latest
     steps:
+      - name: pull repo
+        uses: actions/checkout@v4
       - name: Run linter
         run: npm run lint
   Test:
