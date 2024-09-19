@@ -1,0 +1,11 @@
+name: Workflow 2
+on: issues
+jobs:
+  output_details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output issue detail
+        run: |
+          echo "An action on Issues was performed."
+          echo "Event name: ${{ github.event_name }}"
+          echo "Event path: ${{ github.event_path }}"
